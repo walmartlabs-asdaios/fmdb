@@ -1,0 +1,12 @@
+framework module FMDB {
+	umbrella header "FMDB.h"
+
+	export *
+	module * { export * }
+}
+
+module sqlite3 [system] {
+	header "$SDKROOT/usr/include/sqlite3.h"
+	link "sqlite3"
+	export *
+}
